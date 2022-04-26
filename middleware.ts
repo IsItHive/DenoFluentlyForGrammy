@@ -1,5 +1,5 @@
 
-import { Fluent, LocaleId, TranslationContext } from 'https://raw.githubusercontent.com/dbaishev97/Fluent-try/master/src/index.ts';
+import { Fluent, LocaleId, TranslationContext } from 'https://raw.githubusercontent.com/IsItHive/DenoFluently/main/src/index.ts';
 import { Context, Middleware, NextFunction } from 'https://deno.land/x/grammy/mod.ts';
 
 import { defaultLocaleNegotiator, LocaleNegotiator } from './locale-negotiator.ts';
