@@ -4,7 +4,7 @@
 To make it extremely easy, just import this file into your bot, and see the magic.
 
 To make it work use this code:
-`import {useFluent,Fluent,FluentContextFlavor} from "https://raw.githubusercontent.com/IsItHive/DenoFluentlyForGrammy/main/mod.ts"`
+`import {useFluent,Fluent,FluentContextFlavor} from "https://deno.land/x/grammyfluent/mod.ts"`
 
 Then, to make it work with your bot.
 Simply code:
