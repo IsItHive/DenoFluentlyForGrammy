@@ -1,9 +1,15 @@
 import { Fluent, LocaleId, TranslationContext } from 'https://raw.githubusercontent.com/IsItHive/DenoFluently/main/src/index.ts';
-import { Context, Middleware, NextFunction } from 'https://deno.land/x/grammy/mod.ts';
-
-import { defaultLocaleNegotiator, LocaleNegotiator } from './locale-negotiator.ts';
+import { Context, Middleware, NextFunction } from "https://deno.land/x/grammy@v1.8.0/mod.ts";
 
 
+export type LocaleNegotiator<ContextType extends Context = Context> = (context: ContextType) => (
+  | LocaleId
+  | undefined
+  | PromiseLike<LocaleId | undefined>
+)
+export const defaultLocaleNegotiator: LocaleNegotiator = (
+    context => context.from?.language_code
+)
 export interface GrammyFluentOptions<
   ContextType extends Context = Context
 > {

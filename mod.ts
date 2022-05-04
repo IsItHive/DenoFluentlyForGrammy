@@ -4,11 +4,9 @@ export {
 export type {
     FluentContextFlavor,
     GrammyFluentOptions,
-    TranslateFunction
-} from './middleware.ts'
-export type {
+    TranslateFunction,
     LocaleNegotiator
-} from './locale-negotiator.ts'
+} from './middleware.ts'
 export {
     Fluent,
     LoggingWarningHandler
