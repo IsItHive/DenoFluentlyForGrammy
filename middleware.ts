@@ -1,5 +1,5 @@
-import { Fluent, LocaleId, TranslationContext } from 'https://raw.githubusercontent.com/IsItHive/DenoFluently/main/src/index.ts';
-import { Context, Middleware, NextFunction } from "https://deno.land/x/grammy@v1.8.0/mod.ts";
+import { Fluent, LocaleId, TranslationContext } from 'https://raw.githubusercontent.com/IsItHive/DenoFluently/main/mod.ts';
+import { Context, Middleware, NextFunction } from "https://deno.land/x/grammy/mod.ts";
 
 
 export type LocaleNegotiator<ContextType extends Context = Context> = (context: ContextType) => (
